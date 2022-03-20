@@ -1,5 +1,6 @@
+console.log("Entered")
 const application=[
-      [
+      
             {
                   name:"user1",
                   tittle:"tittle1",
@@ -24,18 +25,18 @@ const application=[
                   about:"Very good4",
                   post:"COA4"
             }
-      ]
+      
 ]
 
-const box=document.getElementsByClassName("box")
+const box=document.getElementsByClassName('box')
+console.log(box);
 box.innerHTML="";
 
-application[0].forEach((e,index)=>{
-      boxElement=document.createElement('div');
-      boxElement.classList.add("application");
+application.forEach((e,index)=>{
+      const boxElement=document.createElement('div');
+      boxElement.classList.add('application');
       boxElement.textContent = "Hello, world!";
       box.appendChild(boxElement);
-      console.log("Running")
-      
+      console.log("Running");
      
 })
