@@ -1,4 +1,3 @@
-console.log("Entered")
 const application=[
       
             {
@@ -28,15 +27,32 @@ const application=[
       
 ]
 
-const box=document.getElementsByClassName('box')
-console.log(box);
-box.innerHTML="";
+// const box=document.getElementsByClassName("box");
+// box.innerHTML="";
 
-application.forEach((e,index)=>{
-      const boxElement=document.createElement('div');
-      boxElement.classList.add('application');
-      boxElement.textContent = "Hello, world!";
+// application[0].forEach((e,index)=>{
+//       boxElement=document.createElement('div');
+//       boxElement.classList.add("application");
+//       boxElement.textContent = "Hello, world!";
+//       box.appendChild(boxElement);
+//       console.log("Running")
+
+
+// })
+
+
+const box = document.createElement("div");
+box.classList.add("box");
+const contain = document.querySelector(".container");
+contain.append(box);
+for (let app of application) {
+      boxElement=document.createElement('div');
+      boxElement.classList.add("application");
+      boxElement.innerHTML += app.name + "  ";
+      boxElement.innerHTML += app.post + "  ";
+      boxElement.innerHTML += app.tittle + "  ";
+      boxElement.innerHTML += app.about + "  ";
       box.appendChild(boxElement);
-      console.log("Running");
-     
-})
+      // console.log("Running");
+
+}
