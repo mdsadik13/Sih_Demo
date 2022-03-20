@@ -4,7 +4,8 @@ const application=[
                   name:"user1",
                   tittle:"tittle1",
                   about:"Very good",
-                  post:"COA"
+                  post:"COA",
+                  resume:"https://docs.google.com/document/d/1rmYcWMvE96usumVZwbzkvWGSKqPAKLes5FfCNY8WHqQ/edit?usp=sharing"
             },
             {
                   name:"user2",
@@ -48,10 +49,11 @@ contain.append(box);
 for (let app of application) {
       boxElement=document.createElement('div');
       boxElement.classList.add("application");
-      boxElement.innerHTML += app.name + "  ";
-      boxElement.innerHTML += app.post + "  ";
-      boxElement.innerHTML += app.tittle + "  ";
-      boxElement.innerHTML += app.about + "  ";
+      boxElement.innerHTML += app.name+"<br>";
+      boxElement.innerHTML += app.post + "<br>";
+      boxElement.innerHTML += app.tittle + "<br>";
+      boxElement.innerHTML += app.about + "<br>";
+      boxElement.innerHTML+=`<a href="${app.resume}">Resume</a>`
       box.appendChild(boxElement);
       // console.log("Running");
 
