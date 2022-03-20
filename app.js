@@ -19,6 +19,13 @@ app.get("/",(req,res)=>{
 app.get("/register",(req,res)=>{
       res.sendFile('register.html', { root: 'template' });
 })
+app.get("/dashboardUser",(req,res)=>{
+      res.sendFile('dashboardUser.html', { root: 'template' });
+})
+app.get("/dashboardCollege",(req,res)=>{
+      res.sendFile('dashboardCollege.html', { root: 'template' });
+})
+
 
 
 app.listen(port,(req,res)=>{
