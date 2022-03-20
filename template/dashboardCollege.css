@@ -26,6 +26,9 @@ body{
 .logout{
       position: fixed;
       right: 40px;
+      list-style: none;
+      text-decoration: none;
+      color: black;
 }
 
 .container{
@@ -38,6 +41,11 @@ body{
       padding: 10px;
       width: 15vw;
       height: 100vh;
+}
+.navbar img{
+      width: 60px;
+      height: 60px;
+      padding: 5px;
 }
 .section{
       border: 1px solid black;
@@ -55,7 +63,7 @@ body{
 
 .application{
       /* border: 2px solid black; */
-      background-color: blue;
+      background-color: #AF75FA;
       /* height: 100px; */
       width: 100;
       padding: 10px;
