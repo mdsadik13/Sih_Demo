@@ -36,15 +36,6 @@ application[0].forEach((e,index)=>{
       boxElement.textContent = "Hello, world!";
       box.appendChild(boxElement);
       console.log("Running")
-      // snakeElement = document.createElement('div');
-      // snakeElement.style.gridRowStart = e.y;
-      // snakeElement.style.gridColumnStart = e.x;
-      // if(index==0){
-      // snakeElement.classList.add("head");
-      // }
-      // else{
-      //       snakeElement.classList.add("snake");
-      // }
-      // board.appendChild(snakeElement);
+      
      
 })
